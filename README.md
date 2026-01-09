@@ -42,7 +42,8 @@ This project provides interactive insights into PhonePe's digital payment ecosys
 
 3. **Set up MySQL database**
    - Ensure MySQL server is running
-   - Update database credentials in `Phone_pe/Sql_scripts/db_connect.py`
+   - Configure database credentials using environment variables or update `Phone_pe/Sql_scripts/db_connect.py`
+   - **Security Note**: Never commit database credentials to version control. Use environment variables or a config file that's excluded via `.gitignore`
 
 4. **Extract and load data**
    ```bash
